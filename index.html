@@ -78,6 +78,31 @@
       font-size: 13px;
       color: #888;
     }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.content-column {
+  flex: 2;
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+    
   </style>
 </head>
 <body>
@@ -89,25 +114,34 @@
       <p>Crisitina Cu Castillo • ComSciCon Houston 2025</p>
     </div>
   </header>
+  
+<main>
+  <div class="content-wrapper">
+    <div class="content-column">
+      <p>Select a model below to explore its video and interactive 3D structure:</p>
 
-  <main>
-    <p>Select a model below to explore its video and interactive 3D structure:</p>
+      <div class="model-link">
+        <a href="ThA-BA/">Bicyclic Aziridine Thiazole Derivative</a>
+        <p>Photochromic Molecule 1.</p>
+      </div>
 
-    <div class="model-link">
-      <a href="ThA-BA/">Bicyclic Aziridine Thiazole Derivative</a>
-      <p>Photochromic Molecule 1.</p>
+      <div class="model-link">
+        <a href="Th-BA-A/">Bicyclic Aziridine Thiophene Derivative</a>
+        <p>Enantiomer A: Photochromic Molecule 2.</p>
+      </div>
+      
+      <div class="model-link">
+        <a href="Th-BA-B/">Bicyclic Aziridine Thiophene Derivative</a>
+        <p>Enantiomer B: Photochromic Molecule 3.</p>
+      </div>
     </div>
 
-    <div class="model-link">
-      <a href="Th-BA-A/">Bicyclic Aziridine Thiophene Derivative</a>
-      <p>Enantiomer A: Photochromic Molecule 2.</p>
+    <div class="image-column">
+      <img src="BA.jpg" alt="Photochromic Molecules Illustration" class="side-image">
     </div>
-    
-    <div class="model-link">
-      <a href="Th-BA-B/">Bicyclic Aziridine Thiophene Derivative</a>
-      <p>Enantiomer B: Photochromic Molecule 3.</p>
-    </div>
-  </main>
+  </div>
+</main>
+
 
   <footer>
     © 2025 Cristina Cu Castillo – All Rights Reserved
