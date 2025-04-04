@@ -18,7 +18,7 @@
 <body>
 
   <model-viewer 
-    src="ThA-BA.glb" 
+    src="thiopheneB.glb" 
     alt="Thiophene-BA-B"
     auto-rotate 
     camera-controls
